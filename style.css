@@ -18,8 +18,10 @@
   }
 
   .card{
-      background: var(--primaryColor);
-      color: var(--secondaryColor );
+      background: #FFFFFF;
+      background: -moz-linear-gradient(45deg, #FFFFFF 0%, #689DFF 50%, #FFFFFF 100%);
+      background: -webkit-linear-gradient(45deg, #FFFFFF 0%, #689DFF 50%, #FFFFFF 100%);
+      background: linear-gradient(45deg, #FFFFFF 0%, #689DFF 50%, #FFFFFF 100%);
       padding: 80px;
       border-radius: 30px;
       width: 100%;
@@ -27,6 +29,10 @@
       margin: 1em;
   }
 
+  .card:hover{
+    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+  }
   .search {
     position: absolute;
     transform:  translate(-50%,50%);
@@ -106,11 +112,19 @@ h1.temp {
     left: 20px;
   }
 
+  footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: cursive;
+}
+
 @media screen and (max-width: 620px) {
 .search:hover > .search-bar {
-    width: 150px;
+    width: 100%;
     padding: 0 6px;
 }
 }
-  
- 
